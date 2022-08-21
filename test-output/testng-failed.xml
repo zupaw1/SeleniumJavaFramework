@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="reusableComponents.ListenersImplementation"/>
+  </listeners>
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="uiTests.TestLinks_HomePage">
+        <methods>
+          <include name="setupMethod"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- uiTests.TestLinks_HomePage -->
+      <class name="uiTests.EndToEndTests_motorcycle">
+        <methods>
+          <include name="setupMethod"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- uiTests.EndToEndTests_motorcycle -->
+      <class name="uiTests.TestSearch_HomePage">
+        <methods>
+          <include name="setupMethod"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- uiTests.TestSearch_HomePage -->
+      <class name="uiTests.ErrorTests_motorcycle">
+        <methods>
+          <include name="setupMethod"/>
+          <include name="verifyModelDropdownOptions"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- uiTests.ErrorTests_motorcycle -->
+      <class name="uiTests.ImageTest_HomePage">
+        <methods>
+          <include name="setupMethod"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- uiTests.ImageTest_HomePage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
